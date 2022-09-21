@@ -1,0 +1,241 @@
+body{
+    background-color: hsl(280, 18%, 93%);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+
+}
+main{
+    width: 50rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+h1{
+    color: hsl(271, 36%, 24%);
+    margin: 1.25rem 0;
+}
+ h2, h3, p{
+    margin: 0;
+}
+i{
+    position: relative;
+    margin-top: .6rem;
+    color: white;
+}
+.top-background{
+    width: 31.25rem;
+    height: 56.25rem;
+    border-radius: 15.625rem;
+    position: fixed;
+    left: -6.25rem;
+    top: -18.75rem;
+    background:linear-gradient(40deg, hsl(264, 100%, 61%)15%, hsl(293, 100%, 63%)85%);
+    z-index: -1;
+}
+
+.bottom-background{
+    width: 31.25rem;
+    height: 56.25rem;
+    border-radius: 15.625rem;
+    background: hsl(270, 20%, 96%);
+    position: fixed;
+    right: -12.5rem;
+
+    bottom: -18.75rem;
+    z-index: -1;
+}
+
+.mobile-card{
+    max-width: 15rem;
+    height: 32rem;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 2rem;
+    border: .625rem solid white;
+    position: relative;
+}
+.mobile-card-top{
+    height: 4rem;
+    border-radius:1.5rem 1.5rem .5rem .5rem;
+    background:linear-gradient(50deg, hsl(264, 100%, 61%)15%, hsl(293, 100%, 63%)85%);
+    padding: .625rem;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-card-notch{
+    width: 60%;
+    height: 1.875rem;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    border-radius: .75rem;
+    top: -10px;
+}
+.mobile-card-top-left{
+    display: flex;
+    height: 40%;
+    width: 65%;
+    justify-content: space-evenly;
+    margin: auto 0 .5rem 0;
+    font-size: .6875rem;
+}
+.mobile-card-top-left-text > h3{
+color: white;
+}
+.mobile-card-top-left-text > p{
+    color: hsl(276, 100%, 81%);
+    }
+.avatar{
+    border-radius: 50%;
+    height: 1.5625rem;
+    border: .125rem solid white ;
+}
+.mobile-card-top-left-more{
+    height: 40%;
+
+    margin: auto .625rem .5rem auto;
+}
+
+.mobile-card-body{
+    padding: .625rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .625rem;
+}
+.left-msg{
+    width: 60%;
+    background-color: hsl(267, 19%, 91%);
+    border-radius: .5rem .5rem .5rem .1rem;
+    color: hsl(276, 55%, 52%);
+    padding: .5rem;
+    
+    font-size: .6rem;
+}
+.right-msg-img{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+}
+.dog-img{
+    border-radius: .625rem;
+    width: 30%;
+}
+
+.right-msg{
+    font-size: .6rem;
+    background-color: white;
+    max-width: 60%;
+    padding: .5rem;
+    border-radius: .5rem .5rem .1rem .5rem;
+    margin-left: auto;
+    color: hsl(271, 15%, 43%);
+}
+.left-input-msg{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: .6rem;
+    background:linear-gradient(50deg,  hsl(293, 100%, 63%)15%, hsl(264, 100%, 61%)85%);
+    border-radius: .5rem .5rem .5rem .2rem;
+    padding: .5rem;
+    color: hsl(0, 0%, 97%);
+}
+.left-input-msg-checkbox{
+    color: hsl(288, 67%, 82%);
+}
+
+.checkbox-round {
+    width: 1em;
+    height: 1em;
+    background-color: hsl(293, 100%, 63%);
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid hsl(289, 95%, 75%);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: hsl(264, 100%, 61%);
+}
+.bottom-input{
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 9px;
+}
+
+.errspan {
+    position: absolute;
+    right: 1rem;
+    bottom: .8rem;
+    margin: 0;
+    z-index: 2;
+    color: hsl(271, 36%, 24%);
+}
+.errspan:hover{
+    cursor: pointer;
+
+}
+.right-section{
+    width: 25rem;
+    margin: auto 0;
+}
+.right-section > p{
+    color: hsl(270, 7%, 64%);
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 50rem) {
+    body{
+        min-height: 150vh;
+    }
+    main{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        min-height: 120vh;
+width: 20rem;
+    }
+
+    .top-background{
+        width: 15rem;
+        height: 28rem;
+        border-radius: 15.625rem;
+        position: fixed;
+        left: -8rem;
+        top: -8rem;
+        background:linear-gradient(40deg, hsl(264, 100%, 61%)15%, hsl(293, 100%, 63%)85%);
+        z-index: -1;
+    }
+    
+    .bottom-background{
+        width: 15rem;
+        height: 28rem;
+        border-radius: 15.625rem;
+        background: hsl(270, 20%, 96%);
+        position: fixed;
+        right: -8rem;
+    
+        bottom: -8rem;
+        z-index: -1;
+    }
+    .mobile-card{
+        margin: auto;
+    }
+    .right-section{
+        width: 100%;
+        margin: auto ;
+    }
+}
